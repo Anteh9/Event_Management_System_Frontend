@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Dashboard</title>
+  <link rel="stylesheet" href="./styles/StyleU.css">
+  <style>
+    /* Style for sign-out button */
+    .signout-btn {
+      float: right;
+      margin-top: -10px;
+      padding: 8px 15px;
+      font-size: 14px;
+      background-color: #ff4d4d;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .signout-btn:hover {
+      background-color: #e60000;
+    }
+
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="user-container">
+    <h1>User Dashboard</h1>
+    <button class="signout-btn" id="signout-btn">Sign Out</button>
+    <h2>Upcoming Events</h2>
+    <table id="event-table">
+      <thead>
+        
+        <tr>
+          <th>Event Name</th>
+          <th>Date</th>
+          <th>Location</th>
+          <th>Description</th>
+          <th>Actions</th>
+          <th>Available seats</th>
+        </tr>
+      </thead>
+      <tbody id="event-list">
+        <!-- Event rows will be injected here -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="./js/user-dashboard.js"></script>
+</body>
+</html>
